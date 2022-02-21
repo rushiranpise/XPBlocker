@@ -54,10 +54,15 @@
             android:summary="@string/receivers_hook_description"
             android:title="@string/receivers_hook" />
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="AGGRESSIVE_HOOK"
             android:summary="@string/aggressive_hook_description"
             android:title="@string/aggressive_hook" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="SPLASH_HOOK"
+            android:summary="@string/splash_hook_description"
+            android:title="@string/splash_hook" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="SYSTEMAPPS"
@@ -69,7 +74,7 @@
             android:summary="@string/no_reload_description"
             android:title="@string/no_reload" />
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="DEBUG"
             android:summary="@string/debug_description"
             android:title="@string/debug" />
@@ -93,7 +98,7 @@
             android:summary="@string/shortcut_hook_description"
             android:title="@string/shortcut_hook" />
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="ANTIXPOSED_HOOK"
             android:summary="@string/antixposed_hook_description"
             android:title="@string/antixposed_hook" />

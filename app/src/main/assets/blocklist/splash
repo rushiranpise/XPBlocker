@@ -1,0 +1,2 @@
+com.tencent.map.WelcomeActivity,com.tencent.map.framework.launch.MapActivityReal
+com.baidu.baidumaps.WelcomeScreen,com.baidu.baidumaps.MapsActivity

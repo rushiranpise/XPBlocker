@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
 import com.aviraxp.adblocker.reborn.util.LogUtils;
 
+import java.util.HashSet;
+
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
@@ -63,9 +65,12 @@ class ActViewHook {
         XposedBridge.hookAllConstructors(ViewGroup.class, viewHook);
     }
 
+    static final HashSet<String> aggressiveBlockCache = new HashSet<>();
     private boolean isAggressiveBlock(String string) {
+        if(aggressiveBlockCache.contains(string))return true;
         for (String listItem : HookLoader.actViewList_aggressive) {
             if (string.contains(listItem)) {
+                aggressiveBlockCache.add(string);
                 return true;
             }
         }

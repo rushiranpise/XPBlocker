@@ -115,6 +115,7 @@ com.google.android.gms.ads.AdView
 com.google.android.gms.ads.NativeExpressAdView
 com.google.android.gms.ads.doubleclick.PublisherAdView
 com.google.android.gms.ads.search.SearchAdView
+com.google.android.gms.ads.admanager.AdManagerAdView
 com.greystripe.android.sdk.AdContentProvider
 com.greystripe.android.sdk.AdView
 com.greystripe.sdk.GSFullscreenActivity
@@ -327,3 +328,4 @@ org.nexage.sourcekit.vast.activity.VASTActivity
 org.nexage.sourcekit.vast.activity.VPAIDActivity
 ru.mail.android.mytarget.ads.MyTargetActivity
 tw.mobiforce.Ad.WebBrowser
+com.bilibili.comic.view.widget.SplashMediaView

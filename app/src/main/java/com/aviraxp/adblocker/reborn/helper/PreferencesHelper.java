@@ -31,6 +31,9 @@ public class PreferencesHelper {
     public static boolean isActViewHookEnabled() {
         return getModuleSharedPreferences().getBoolean("ACTVIEW_HOOK", true);
     }
+    public static boolean isSplashHookEnabled() {
+        return getModuleSharedPreferences().getBoolean("SPLASH_HOOK", true);
+    }
 
     public static boolean isHostsHookEnabled() {
         return getModuleSharedPreferences().getBoolean("HOSTS_HOOK", true);
@@ -57,7 +60,7 @@ public class PreferencesHelper {
     }
 
     public static boolean isAggressiveHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("AGGRESSIVE_HOOK", false);
+        return getModuleSharedPreferences().getBoolean("AGGRESSIVE_HOOK", true);
     }
 
     public static boolean isShortcutHookEnabled() {
@@ -69,7 +72,7 @@ public class PreferencesHelper {
     }
 
     public static boolean isDebugModeEnabled() {
-        return getModuleSharedPreferences().getBoolean("DEBUG", false);
+        return getModuleSharedPreferences().getBoolean("DEBUG", true);
     }
 
     public static boolean isWhitelisted(String string) {
@@ -97,6 +100,6 @@ public class PreferencesHelper {
     }
 
     public static boolean isDisableXposedEnabled() {
-        return getModuleSharedPreferences().getBoolean("ANTIXPOSED_HOOK", false);
+        return getModuleSharedPreferences().getBoolean("ANTIXPOSED_HOOK", true);
     }
 }

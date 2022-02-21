@@ -4,7 +4,9 @@ import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
 import com.aviraxp.adblocker.reborn.util.BlocklistInitUtils;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.IXposedHookZygoteInit;
@@ -19,6 +21,7 @@ public class HookLoader implements IXposedHookLoadPackage, IXposedHookZygoteInit
     static final HashSet<String> receiversList = new HashSet<>();
     static final HashSet<String> servicesList = new HashSet<>();
     static final HashSet<String> urlList = new HashSet<>();
+    static final Map<String, String> splashMap = new HashMap<>();
 
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) {
 
@@ -37,6 +40,7 @@ public class HookLoader implements IXposedHookLoadPackage, IXposedHookZygoteInit
         new ReceiversHook().hook(lpparam);
         new URLHook().hook(lpparam);
         new WebViewHook().hook(lpparam);
+        new SplashHook().hook(lpparam);
     }
 
     public void initZygote(StartupParam startupParam) throws IOException {
@@ -47,5 +51,12 @@ public class HookLoader implements IXposedHookLoadPackage, IXposedHookZygoteInit
         new BlocklistInitUtils().init(startupParam, "blocklist/services", HookLoader.servicesList);
         new BlocklistInitUtils().init(startupParam, "blocklist/urls", HookLoader.urlList);
         new BlocklistInitUtils().init(startupParam, "blocklist/receivers", HookLoader.receiversList);
+        HashSet<String> splashList= new HashSet<>();
+        new BlocklistInitUtils().init(startupParam, "blocklist/splash", splashList);
+        for (String s : splashList) {
+            if(s.startsWith("#"))continue;
+            String[] split = s.split(",");
+            HookLoader.splashMap.put(split[0],split.length==1?null:split[1]);
+        }
     }
 }
