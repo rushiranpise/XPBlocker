@@ -1,8 +1,8 @@
-package com.aviraxp.adblocker.reborn.helper;
+package com.aviraxp.xpblocker.helper;
 
 import android.content.pm.ApplicationInfo;
 
-import com.aviraxp.adblocker.reborn.BuildConfig;
+import com.aviraxp.xpblocker.BuildConfig;
 
 import java.util.Arrays;
 import java.util.HashSet;

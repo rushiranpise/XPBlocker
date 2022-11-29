@@ -1,7 +1,7 @@
-package com.aviraxp.adblocker.reborn.hook;
+package com.aviraxp.xpblocker.hook;
 
-import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
-import com.aviraxp.adblocker.reborn.util.BlocklistInitUtils;
+import com.aviraxp.xpblocker.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.util.BlocklistInitUtils;
 
 import java.io.IOException;
 import java.util.HashMap;

@@ -3,12 +3,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 32
     defaultConfig {
-        applicationId "com.aviraxp.adblocker.reborn"
+        applicationId "com.aviraxp.xpblocker"
         minSdkVersion 26
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 28
-        versionCode 32
-        versionName "1.8.6"
+        versionCode 33
+        versionName "1.8.33"
     }
 
     signingConfigs {

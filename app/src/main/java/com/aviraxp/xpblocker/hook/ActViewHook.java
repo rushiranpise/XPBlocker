@@ -1,4 +1,4 @@
-package com.aviraxp.adblocker.reborn.hook;
+package com.aviraxp.xpblocker.hook;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
-import com.aviraxp.adblocker.reborn.util.LogUtils;
+import com.aviraxp.xpblocker.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.util.LogUtils;
 
 import java.util.HashSet;
 

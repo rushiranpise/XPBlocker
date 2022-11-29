@@ -1,13 +1,13 @@
-package com.aviraxp.adblocker.reborn.hook;
+package com.aviraxp.xpblocker.hook;
 
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 
-import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
-import com.aviraxp.adblocker.reborn.util.ContextUtils;
-import com.aviraxp.adblocker.reborn.util.LogUtils;
+import com.aviraxp.xpblocker.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.util.ContextUtils;
+import com.aviraxp.xpblocker.util.LogUtils;
 
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;

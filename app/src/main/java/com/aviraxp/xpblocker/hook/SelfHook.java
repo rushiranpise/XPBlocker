@@ -1,6 +1,6 @@
-package com.aviraxp.adblocker.reborn.hook;
+package com.aviraxp.xpblocker.hook;
 
-import com.aviraxp.adblocker.reborn.BuildConfig;
+import com.aviraxp.xpblocker.BuildConfig;
 
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;

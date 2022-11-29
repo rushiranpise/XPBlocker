@@ -1,9 +1,9 @@
-package com.aviraxp.adblocker.reborn.util;
+package com.aviraxp.xpblocker.util;
 
 import android.content.Context;
 import android.widget.Toast;
 
-import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.helper.PreferencesHelper;
 
 import de.robv.android.xposed.XposedBridge;
 

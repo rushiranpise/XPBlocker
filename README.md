@@ -1,6 +1,6 @@
 Disclaimer: I know, this description and its textd are looking bad, it's temporary. Fancy icons and Huge texts are gonna be placed here on the future.
 
-# AdBlocker Reborn v2
+# Adblocker Reborn v2 (XPBlocker)
 #### Maintained by @HardcodedCat
 #### Created by @aviraxp
 
