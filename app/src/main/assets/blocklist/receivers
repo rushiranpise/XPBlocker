@@ -1,3 +1,4 @@
+com.google.android.gms.measurement.AppMeasurementReceiver
 cn.aduu.adsdk.AduuPushAdReceiver
 com.admob.android.ads.analytics.InstallReceiver
 com.appodeal.ads.AppodealPackageAddedReceiver

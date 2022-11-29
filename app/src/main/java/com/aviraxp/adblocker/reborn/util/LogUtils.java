@@ -1,6 +1,6 @@
-package com.aviraxp.adblocker.continued.util;
+package com.aviraxp.adblocker.reborn.util;
 
-import com.aviraxp.adblocker.continued.helper.PreferencesHelper;
+import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
 
 import de.robv.android.xposed.XposedBridge;
 

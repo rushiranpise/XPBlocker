@@ -1,5 +1,11 @@
+com.google.android.gms.ads.AdService
+com.applovin.impl.adview.activity.FullscreenAdService
+com.applovin.impl.sdk.utils.AppKilledService
+com.google.android.gms.measurement.AppMeasurementService
+com.google.android.gms.measurement.AppMeasurementJobService
 com.adsmogo.controller.service.CountService
 com.adsmogo.controller.service.UpdateService
+com.fyber.cache.CacheVideoDownloadService
 com.avos.avoscloud.PushService
 com.baidu.android.pushservice.CommandService
 com.baidu.android.pushservice.PushService

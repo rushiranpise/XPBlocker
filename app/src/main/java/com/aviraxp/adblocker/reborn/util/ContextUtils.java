@@ -1,4 +1,4 @@
-package com.aviraxp.adblocker.continued.util;
+package com.aviraxp.adblocker.reborn.util;
 
 import android.app.ActivityThread;
 import android.content.Context;

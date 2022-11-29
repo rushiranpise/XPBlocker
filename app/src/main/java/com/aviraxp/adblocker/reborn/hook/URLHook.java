@@ -1,7 +1,7 @@
-package com.aviraxp.adblocker.continued.hook;
+package com.aviraxp.adblocker.reborn.hook;
 
-import com.aviraxp.adblocker.continued.helper.PreferencesHelper;
-import com.aviraxp.adblocker.continued.util.LogUtils;
+import com.aviraxp.adblocker.reborn.helper.PreferencesHelper;
+import com.aviraxp.adblocker.reborn.util.LogUtils;
 
 import java.net.MalformedURLException;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package com.aviraxp.adblocker.continued.util;
+package com.aviraxp.adblocker.reborn.util;
 
 import android.content.res.Resources;
 import android.content.res.XModuleResources;

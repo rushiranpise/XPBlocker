@@ -1,4 +1,4 @@
-package com.aviraxp.adblocker.continued.ui;
+package com.aviraxp.adblocker.reborn.ui;
 
 import android.app.AlertDialog;
 import android.content.Context;

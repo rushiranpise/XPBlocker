@@ -18,8 +18,8 @@
 
 -obfuscationdictionary dictionary-elder.txt
 -keepattributes SourceFile,LineNumberTable
--keep class com.aviraxp.adblocker.continued.hook.HookLoader
+-keep class com.aviraxp.adblocker.reborn.hook.HookLoader
 -keep class android.** { *; }
--keepclassmembernames class com.aviraxp.adblocker.continued.ui.SettingsActivity {
+-keepclassmembernames class com.aviraxp.adblocker.reborn.ui.SettingsActivity {
     static boolean isActivated;
 }

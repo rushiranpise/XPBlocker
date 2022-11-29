@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AdBlocker Reborn</string>
-    <string name="xposed_description">The Reborn Adblocker</string>
+    <string name="app_name">AdBlocker Reborn v2</string>
+    <string name="xposed_description">AdBlocker reborn, recontinued.</string>
     <string name="hint_reboot_not_active">Module is not activated!</string>
     <string name="actview_hook">Enable Activity and View Block</string>
     <string name="actview_hook_description">Block activities and views according to a preloaded list</string>
@@ -51,8 +51,8 @@
     <string name="list_mode_description">Use whitelist mode for application list when enabled, blacklist mode when disabled</string>
     <string name="list_mode">Whitelist Mode</string>
     <string name="updatelog">Update Log</string>
-    <string name="app_translator">aviraxp</string>
-    <string name="translator">Translator</string>
+    <string name="app_maintainer">HardcodedCat</string>
+    <string name="maintainer">Maintainer</string>
     <string name="antixposed_hook_description">Prevent some applications from blocking xposed themselves</string>
     <string name="antixposed_hook">Enable Anti-Anti Xposed Block</string>
 </resources>

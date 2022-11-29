@@ -1,4 +1,4 @@
-package com.aviraxp.adblocker.continued.ui;
+package com.aviraxp.adblocker.reborn.ui;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -18,8 +18,8 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 
-import com.aviraxp.adblocker.continued.BuildConfig;
-import com.aviraxp.adblocker.continued.R;
+import com.aviraxp.adblocker.reborn.BuildConfig;
+import com.aviraxp.adblocker.reborn.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -62,16 +62,12 @@ public class SettingsActivity extends PreferenceActivity {
     }
 
     private String getLocalUpdateLog() {
-        if (Locale.getDefault().getLanguage().equals("zh")) {
-            return "file:///android_asset/html/update_cn.html";
-        } else {
             return "file:///android_asset/html/update_en.html";
-        }
     }
 
     private void uriListener() {
         uriHelper("DONATE_PAYPAL", "https://ko-fi.com/A46115EM");
-        uriHelper("GITHUB", "https://github.com/aviraxp/AdBlocker_Reborn");
+        uriHelper("GITHUB", "https://github.com/HardcodedCat/AdBlocker_Reborn_v2");
         uriHelper("XDA", "https://forum.xda-developers.com/xposed/modules/xposed-adblocker-reborn-1-0-1-2017-02-11-t3554617");
     }
 
