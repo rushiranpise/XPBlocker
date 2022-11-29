@@ -1,17 +1,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory
-        android:key="WHITELISTS"
-        android:title="@string/whitelist">
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="LIST_MODE"
-            android:summary="@string/list_mode_description"
-            android:title="@string/list_mode" />
-        <MultiSelectListPreference
-            android:key="SELECTED_APPS"
-            android:summary="@string/applist_description"
-            android:title="@string/applist" />
-    </PreferenceCategory>
+    <MultiSelectListPreference
+        android:key="SELECTED_APPS"
+        android:summary="@string/applist_description"
+        android:title="@string/applist" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="LIST_MODE"
+        android:summary="@string/list_mode_description"
+        android:title="@string/list_mode" />
     <PreferenceCategory
         android:key="WHITELISTS_ELEMENT"
         android:title="@string/whitelist_element">
