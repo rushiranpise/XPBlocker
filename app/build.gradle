@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 32
+    namespace "com.aviraxp.xpblocker"
     defaultConfig {
-        applicationId "com.aviraxp.xpblocker"
         minSdkVersion 26
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 28
