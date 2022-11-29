@@ -24,42 +24,42 @@
         android:key="SETTINGS"
         android:title="@string/settings">
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="ACTVIEW_HOOK"
             android:summary="@string/actview_hook_description"
             android:title="@string/actview_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="HOSTS_HOOK"
             android:summary="@string/hosts_hook_description"
             android:title="@string/hosts_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="WEBVIEW_HOOK"
             android:summary="@string/webview_hook_description"
             android:title="@string/webview_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="URL_HOOK"
             android:summary="@string/url_hook_description"
             android:title="@string/url_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="SERVICES_HOOK"
             android:summary="@string/services_hook_description"
             android:title="@string/services_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="RECEIVERS_HOOK"
             android:summary="@string/receivers_hook_description"
             android:title="@string/receivers_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="AGGRESSIVE_HOOK"
             android:summary="@string/aggressive_hook_description"
             android:title="@string/aggressive_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="SPLASH_HOOK"
             android:summary="@string/splash_hook_description"
             android:title="@string/splash_hook" />
@@ -69,12 +69,12 @@
             android:summary="@string/system_apps_description"
             android:title="@string/system_apps" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="NORELOAD"
             android:summary="@string/no_reload_description"
             android:title="@string/no_reload" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="DEBUG"
             android:summary="@string/debug_description"
             android:title="@string/debug" />
@@ -98,7 +98,7 @@
             android:summary="@string/shortcut_hook_description"
             android:title="@string/shortcut_hook" />
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="ANTIXPOSED_HOOK"
             android:summary="@string/antixposed_hook_description"
             android:title="@string/antixposed_hook" />

@@ -21,7 +21,7 @@ public class PreferencesHelper {
         if (preferences == null) {
             preferences = new XSharedPreferences(BuildConfig.APPLICATION_ID);
             preferences.makeWorldReadable();
-            isNoReloadPreferences = preferences.getBoolean("NORELOAD", true);
+            isNoReloadPreferences = preferences.getBoolean("NORELOAD", false);
         } else if (!isNoReloadPreferences) {
             preferences.reload();
         }
@@ -29,26 +29,26 @@ public class PreferencesHelper {
     }
 
     public static boolean isActViewHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("ACTVIEW_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("ACTVIEW_HOOK", false);
     }
     public static boolean isSplashHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("SPLASH_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("SPLASH_HOOK", false);
     }
 
     public static boolean isHostsHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("HOSTS_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("HOSTS_HOOK", false);
     }
 
     public static boolean isWebViewHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("WEBVIEW_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("WEBVIEW_HOOK", false);
     }
 
     public static boolean isServicesHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("SERVICES_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("SERVICES_HOOK", false);
     }
 
     public static boolean isReceiversHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("RECEIVERS_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("RECEIVERS_HOOK", false);
     }
 
     public static boolean isBackPressHookEnabled() {
@@ -56,11 +56,11 @@ public class PreferencesHelper {
     }
 
     public static boolean isURLHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("URL_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("URL_HOOK", false);
     }
 
     public static boolean isAggressiveHookEnabled() {
-        return getModuleSharedPreferences().getBoolean("AGGRESSIVE_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("AGGRESSIVE_HOOK", false);
     }
 
     public static boolean isShortcutHookEnabled() {
@@ -72,7 +72,7 @@ public class PreferencesHelper {
     }
 
     public static boolean isDebugModeEnabled() {
-        return getModuleSharedPreferences().getBoolean("DEBUG", true);
+        return getModuleSharedPreferences().getBoolean("DEBUG", false);
     }
 
     public static boolean isWhitelisted(String string) {
@@ -80,7 +80,7 @@ public class PreferencesHelper {
     }
 
     private static boolean isWhiteListModeEnabled() {
-        return getModuleSharedPreferences().getBoolean("LIST_MODE", true);
+        return getModuleSharedPreferences().getBoolean("LIST_MODE", false);
     }
 
     public static boolean isDisabledSystemApp(XC_LoadPackage.LoadPackageParam lpm) {
@@ -100,6 +100,6 @@ public class PreferencesHelper {
     }
 
     public static boolean isDisableXposedEnabled() {
-        return getModuleSharedPreferences().getBoolean("ANTIXPOSED_HOOK", true);
+        return getModuleSharedPreferences().getBoolean("ANTIXPOSED_HOOK", false);
     }
 }
