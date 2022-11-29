@@ -76,7 +76,7 @@ public class PreferencesHelper {
     }
 
     public static boolean isWhitelisted(String string) {
-        return isWhiteListModeEnabled() && disabledApps().contains(string) || !isWhiteListModeEnabled() && !disabledApps().contains(string);
+        return isWhiteListModeEnabled() && selectedApps().contains(string) || !isWhiteListModeEnabled() && !selectedApps().contains(string);
     }
 
     private static boolean isWhiteListModeEnabled() {
@@ -91,8 +91,8 @@ public class PreferencesHelper {
         return string.startsWith("com.android") && !string.equals("com.android.webview") || string.equalsIgnoreCase("android");
     }
 
-    private static Set<String> disabledApps() {
-        return getModuleSharedPreferences().getStringSet("DISABLED_APPS", new HashSet<String>());
+    private static Set<String> selectedApps() {
+        return getModuleSharedPreferences().getStringSet("SELECTED_APPS", new HashSet<String>());
     }
 
     public static List<String> whiteListElements() {

@@ -28,8 +28,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-import moe.feng.alipay.zerosdk.AlipayZeroSdk;
-
 @SuppressWarnings("deprecation")
 @SuppressLint("WorldReadableFiles")
 public class SettingsActivity extends PreferenceActivity {
@@ -66,8 +64,8 @@ public class SettingsActivity extends PreferenceActivity {
     }
 
     private void uriListener() {
-        uriHelper("DONATE_PAYPAL", "https://ko-fi.com/A46115EM");
         uriHelper("GITHUB", "https://github.com/HardcodedCat/AdBlocker_Reborn_v2");
+        uriHelper("MAINTAINER", "https://github.com/HardcodedCat");
         uriHelper("XDA", "https://forum.xda-developers.com/xposed/modules/xposed-adblocker-reborn-1-0-1-2017-02-11-t3554617");
     }
 
@@ -82,22 +80,6 @@ public class SettingsActivity extends PreferenceActivity {
                 return true;
             }
         });
-    }
-
-    private void removePreference() {
-        try {
-            PackageInfo info = getApplicationContext().getPackageManager().getPackageInfo("com.eg.android.AlipayGphone", 0);
-            boolean isAvailable = info != null;
-            if (!isAvailable) {
-                PreferenceCategory displayOptions = (PreferenceCategory) findPreference("ABOUT");
-                displayOptions.removePreference(findPreference("DONATE_ALIPAY"));
-            } else {
-                donateAlipay();
-            }
-        } catch (Throwable t) {
-            PreferenceCategory displayOptions = (PreferenceCategory) findPreference("ABOUT");
-            displayOptions.removePreference(findPreference("DONATE_ALIPAY"));
-        }
     }
 
     private void licensesListener() {
@@ -121,16 +103,6 @@ public class SettingsActivity extends PreferenceActivity {
                     .setNegativeButton(android.R.string.cancel, null)
                     .show();
         }
-    }
-
-    private void donateAlipay() {
-        findPreference("DONATE_ALIPAY").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                AlipayZeroSdk.startAlipayClient(SettingsActivity.this, "aex00388woilyb9ln32hlfe");
-                return true;
-            }
-        });
     }
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
@@ -169,13 +141,13 @@ public class SettingsActivity extends PreferenceActivity {
 
     private class AppPicker extends AsyncTask<Void, Void, Void> {
 
-        private final MultiSelectListPreference disabledApps = (MultiSelectListPreference) findPreference("DISABLED_APPS");
+        private final MultiSelectListPreference selectedApps = (MultiSelectListPreference) findPreference("SELECTED_APPS");
         private final List<CharSequence> appNames = new ArrayList<>();
         private final List<CharSequence> packageNames = new ArrayList<>();
 
         @Override
         protected void onPreExecute() {
-            disabledApps.setEnabled(false);
+            selectedApps.setEnabled(false);
         }
 
         @Override
@@ -210,9 +182,9 @@ public class SettingsActivity extends PreferenceActivity {
         protected void onPostExecute(Void result) {
             final CharSequence[] appNamesList = appNames.toArray(new CharSequence[0]);
             final CharSequence[] packageNamesList = packageNames.toArray(new CharSequence[0]);
-            disabledApps.setEntries(appNamesList);
-            disabledApps.setEntryValues(packageNamesList);
-            disabledApps.setEnabled(true);
+            selectedApps.setEntries(appNamesList);
+            selectedApps.setEntryValues(packageNamesList);
+            selectedApps.setEnabled(true);
         }
     }
 }

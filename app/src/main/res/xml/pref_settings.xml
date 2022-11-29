@@ -8,9 +8,9 @@
             android:summary="@string/list_mode_description"
             android:title="@string/list_mode" />
         <MultiSelectListPreference
-            android:key="DISABLED_APPS"
-            android:summary="@string/whitelist_description"
-            android:title="@string/whitelist" />
+            android:key="SELECTED_APPS"
+            android:summary="@string/applist_description"
+            android:title="@string/applist" />
     </PreferenceCategory>
     <PreferenceCategory
         android:key="WHITELISTS_ELEMENT"
@@ -85,8 +85,8 @@
             android:title="@string/hide_launcher_icon" />
     </PreferenceCategory>
     <PreferenceCategory
-        android:key="BONUS"
-        android:title="@string/bonus">
+        android:key="MISCELLANEOUS"
+        android:title="@string/miscellaneous">
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="BACKPRESS_HOOK"
@@ -102,18 +102,6 @@
             android:key="ANTIXPOSED_HOOK"
             android:summary="@string/antixposed_hook_description"
             android:title="@string/antixposed_hook" />
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:key="DONATION"
-        android:title="@string/donate">
-        <Preference
-            android:key="DONATE_ALIPAY"
-            android:summary="@string/donate_description_alipay"
-            android:title="@string/donate_alipay" />
-        <Preference
-            android:key="DONATE_PAYPAL"
-            android:summary="@string/donate_description_payapl"
-            android:title="@string/donate_paypal" />
     </PreferenceCategory>
     <PreferenceCategory
         android:key="ABOUT"
@@ -134,5 +122,9 @@
             android:key="LICENSES"
             android:summary="@string/license_description"
             android:title="@string/license" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="CREDITS"
+        android:title="@string/credits">
     </PreferenceCategory>
 </PreferenceScreen>
