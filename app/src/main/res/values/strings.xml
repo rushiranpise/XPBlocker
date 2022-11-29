@@ -44,7 +44,7 @@
     <string name="no_reload">Compatibility Mode</string>
     <string name="url_hook_description">Block URL Addresses based on their paths</string>
     <string name="url_hook">Aggressive URL Path Block</string>
-    <string name="list_mode_description">Enables XPBlocker for all apps, except for apps selected in the App Picker, whose won\'t be affected.</string>
+    <string name="list_mode_description">Enables XPBlocker for all apps, except for apps selected in the App List, whose won\'t be affected.</string>
     <string name="list_mode">Whitelist Mode</string>
     <string name="updatelog">Update Log</string>
     <string name="app_maintainer">This module is currently being developed by HardcodedCat</string>
