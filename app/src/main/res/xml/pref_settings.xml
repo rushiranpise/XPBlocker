@@ -3,7 +3,7 @@
         android:key="WHITELISTS"
         android:title="@string/whitelist">
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="LIST_MODE"
             android:summary="@string/list_mode_description"
             android:title="@string/list_mode" />
