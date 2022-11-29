@@ -8,22 +8,18 @@
         android:key="LIST_MODE"
         android:summary="@string/list_mode_description"
         android:title="@string/list_mode" />
-    <PreferenceCategory
-        android:key="WHITELISTS_ELEMENT"
-        android:title="@string/whitelist_element">
-        <EditTextPreference
-            android:key="DISABLED_ELEMENTS"
-            android:summary="@string/whitelist_element_description"
-            android:title="@string/whitelist_element" />
-    </PreferenceCategory>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="SYSTEMAPPS"
+        android:summary="@string/system_apps_description"
+        android:title="@string/system_apps" />
+    <EditTextPreference
+        android:key="ACTIVITY_WHITELIST"
+        android:summary="@string/activity_whitelist_description"
+        android:title="@string/activity_whitelist" />
     <PreferenceCategory
         android:key="SETTINGS"
         android:title="@string/settings">
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="ACTVIEW_HOOK"
-            android:summary="@string/actview_hook_description"
-            android:title="@string/actview_hook" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="HOSTS_HOOK"
@@ -36,9 +32,9 @@
             android:title="@string/webview_hook" />
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="URL_HOOK"
-            android:summary="@string/url_hook_description"
-            android:title="@string/url_hook" />
+            android:key="ACTVIEW_HOOK"
+            android:summary="@string/actview_hook_description"
+            android:title="@string/actview_hook" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="SERVICES_HOOK"
@@ -49,40 +45,6 @@
             android:key="RECEIVERS_HOOK"
             android:summary="@string/receivers_hook_description"
             android:title="@string/receivers_hook" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="AGGRESSIVE_HOOK"
-            android:summary="@string/aggressive_hook_description"
-            android:title="@string/aggressive_hook" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="SPLASH_HOOK"
-            android:summary="@string/splash_hook_description"
-            android:title="@string/splash_hook" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="SYSTEMAPPS"
-            android:summary="@string/system_apps_description"
-            android:title="@string/system_apps" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="NORELOAD"
-            android:summary="@string/no_reload_description"
-            android:title="@string/no_reload" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="DEBUG"
-            android:summary="@string/debug_description"
-            android:title="@string/debug" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="HIDEICON"
-            android:summary="@string/hide_launcher_icon_description"
-            android:title="@string/hide_launcher_icon" />
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:key="MISCELLANEOUS"
-        android:title="@string/miscellaneous">
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="BACKPRESS_HOOK"
@@ -98,6 +60,40 @@
             android:key="ANTIXPOSED_HOOK"
             android:summary="@string/antixposed_hook_description"
             android:title="@string/antixposed_hook" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="SPLASH_HOOK"
+            android:summary="@string/splash_hook_description"
+            android:title="@string/splash_hook" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="AGGRESSIVE_HOOK"
+            android:summary="@string/aggressive_hook_description"
+            android:title="@string/aggressive_hook" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="URL_HOOK"
+            android:summary="@string/url_hook_description"
+            android:title="@string/url_hook" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="MISCELLANEOUS"
+        android:title="@string/miscellaneous">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="HIDEICON"
+            android:summary="@string/hide_launcher_icon_description"
+            android:title="@string/hide_launcher_icon" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="NORELOAD"
+            android:summary="@string/no_reload_description"
+            android:title="@string/no_reload" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="DEBUG"
+            android:summary="@string/debug_description"
+            android:title="@string/debug" />
     </PreferenceCategory>
     <PreferenceCategory
         android:key="ABOUT"
@@ -122,5 +118,9 @@
     <PreferenceCategory
         android:key="CREDITS"
         android:title="@string/credits">
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="NULL"
+        android:title=" ">
     </PreferenceCategory>
 </PreferenceScreen>

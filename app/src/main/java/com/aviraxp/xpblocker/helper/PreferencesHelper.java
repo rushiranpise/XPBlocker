@@ -96,7 +96,7 @@ public class PreferencesHelper {
     }
 
     public static List<String> whiteListElements() {
-        return Arrays.asList(getModuleSharedPreferences().getString("DISABLED_ELEMENTS", "").split("\n"));
+        return Arrays.asList(getModuleSharedPreferences().getString("ACTIVITY_WHITELIST", "").split("\n"));
     }
 
     public static boolean isDisableXposedEnabled() {
