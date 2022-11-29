@@ -16,7 +16,7 @@
     <string name="license">Open Source Licenses</string>
     <string name="license_description">This module is distributed under GPL-3.0 license</string>
     <string name="open_project">Source code</string>
-    <string name="open_project_description">View this project's source code or contribute on GitHub</string>
+    <string name="open_project_description">View this project\'s source code or contribute on GitHub</string>
     <string name="settings">Settings</string>
     <string name="about">About</string>
     <string name="backpress_hook_description">Allow canceling any dialog (Useful when applications displays anti-ad dialogs)</string>
@@ -44,7 +44,7 @@
     <string name="no_reload">Compatibility Mode</string>
     <string name="url_hook_description">Block URL Addresses based on their paths</string>
     <string name="url_hook">Enable Aggressive URL Path Block</string>
-    <string name="list_mode_description">Enables XPBlocker for all apps, except for apps selected in the App Picker, whose won't be affected.</string>
+    <string name="list_mode_description">Enables XPBlocker for all apps, except for apps selected in the App Picker, whose won\'t be affected.</string>
     <string name="list_mode">Whitelist Mode</string>
     <string name="updatelog">Update Log</string>
     <string name="app_maintainer">HardcodedCat</string>
