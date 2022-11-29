@@ -41,7 +41,6 @@ public class SettingsActivity extends PreferenceActivity {
         checkState();
         showUpdateLog();
         new AppPicker().execute();
-        removePreference();
         uriListener();
         hideIconListener();
         licensesListener();
