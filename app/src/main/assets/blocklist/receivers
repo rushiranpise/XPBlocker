@@ -6,6 +6,8 @@ com.baidu.frontia.FrontiaPushMessageReceiver
 com.boyaa.admobile.broadcast.NetworkStateReceiver
 com.cfv.adsdk.OptimizeReceiver
 com.dmzj.manhua.ad.ADBroadCastReceiver
+com.fyber.inneractive.sdk.mraid.IAMraidKit
+com.fyber.inneractive.sdk.video.IAVideoKit
 com.heyzap.sdk.ads.PackageAddedReceiver
 com.inmobi.adtracker.androidsdk.IMAdTrackerReceiver
 com.inneractive.api.ads.sdk.impl.PckgAddReceiver
@@ -14,6 +16,8 @@ com.lsk.mobads.receiver.TriggerReceiver
 com.nativex.advertiser.ReferralReceiver
 com.sponsorpay.advertiser.InstallReferrerReceiver
 com.sponsorpay.sdk.android.advertiser.InstallReferrerReceiver
+com.tapjoy.InstallReferrerReceiver
+com.tapjoy.TapjoyReceiver
 com.vserv.android.ads.network.VservPackageReceiver
 net.adxmi.android.AdReceiver
 net.youmi.android.AdReceiver
