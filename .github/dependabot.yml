@@ -9,8 +9,10 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    rebase-strategy: "disabled"
 
   - package-ecosystem: "github-actions"
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    rebase-strategy: "disabled"
