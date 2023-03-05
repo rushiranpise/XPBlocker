@@ -1,19 +1,48 @@
 name: Build nightly
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      buildType:
+        description: 'App building type'
+        required: true
+        default: 'debug'
+        type: choice
+        options:
+        - release
+        - debug
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  build:
+  debug:
+    name: Generate Debug APK
+    if: ${{ (inputs.buildType == 'debug') || (github.event_name == 'pull_request') }}
     runs-on: ubuntu-latest
     steps:
-    - name: Clone repository
-      uses: actions/checkout@v3
-    - name: Build
-      run: |
-        ./gradlew assembleDebug
-    - name: Store generated APK file
-      uses: actions/upload-artifact@v3
-      with:
-        name: xposed-adblocker
-        path: ./app/build/outputs/apk/debug/app-debug.apk
+      - name: Clone repository
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          ./gradlew assembleDebug
+      - name: Store generated APK file
+        uses: actions/upload-artifact@v3
+        with:
+          name: xposed-adblocker
+          path: ./app/build/outputs/apk/debug/app-debug.apk
+  release:
+    name: Generate Release APK
+    if: ${{ (inputs.buildType == 'release') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          ./gradlew assembleRelease
+      - name: Store generated APK file
+        uses: actions/upload-artifact@v3
+        with:
+          name: xposed-adblocker
+          path: ./app/build/outputs/apk/release/app-release.apk
