@@ -33,7 +33,7 @@
     <string name="activity_whitelist_description">Input activities that should not be affected by this module</string>
     <string name="activity_whitelist">Activity Whitelist</string>
     <string name="miscellaneous">Miscellaneous</string>
-    <string name="credits">Created by aviraxp</string>
+    <string name="credits">Created by aviraxp, revived by AwaisKing</string>
     <string name="shortcut_hook_description">Prevent selected apps from auto creating shortcuts</string>
     <string name="shortcut_hook">Prevent Shortcut Auto Creation</string>
     <string name="no_reload_description">Improves performance, but every new configuration will not take effect until next boot</string>
@@ -41,7 +41,7 @@
     <string name="url_hook_description">Block URL Addresses based on their paths</string>
     <string name="url_hook">Aggressive URL Path Block</string>
     <string name="updatelog">Update Log</string>
-    <string name="app_maintainer">This module is currently being developed by AwaisKing</string>
+    <string name="app_maintainer">This module is currently being developed by rushiranpise</string>
     <string name="maintainer">Maintainer</string>
     <string name="antixposed_hook_description">Prevent some applications from attempting to block Xposed themselves</string>
     <string name="antixposed_hook">Bypass Xposed Block</string>

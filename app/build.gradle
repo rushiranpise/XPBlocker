@@ -42,6 +42,12 @@ android {
             storePassword 'xrj45yWGLbsO7W0v'
             keyPassword 'xrj45yWGLbsO7W0v'
         }
+        release {
+            keyAlias System.getenv("KEY_ALIAS") ?: 'xpblocker'
+            keyPassword System.getenv("KEYSTORE_PASS")
+            storeFile file(System.getenv("KEYSTORE_FILE") ?: 'xpblocker.keystore')
+            storePassword System.getenv("KEY_PASS")
+        }
     }
 
     buildTypes {
@@ -56,6 +62,12 @@ android {
             shrinkResources false
             jniDebuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            /* Sign with the real release key when the signing secrets are present
+               (set in CI); otherwise produce an unsigned APK that CI signs with
+               uber-apk-signer. */
+            if (System.getenv("KEYSTORE_PASS") != null && System.getenv("KEY_PASS") != null) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 
@@ -77,6 +89,12 @@ android {
 }
 
 dependencies {
-    compileOnly 'de.robv.android.xposed:api:82'
-    compileOnly 'de.robv.android.xposed:api:82:sources'
+    // Xposed API (API 82). Vendored as a jar because the old jcenter / aliyun
+    // mirrors that hosted it are dead; compileOnly only - the API classes must
+    // NEVER be bundled into the module APK or they would shadow the framework's own.
+    compileOnly files('libs/api-82.jar')
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.google.android.material:material:1.12.0'
 }

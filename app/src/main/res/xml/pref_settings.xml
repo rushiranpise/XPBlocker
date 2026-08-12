@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceScreen
+
+    <Preference
         android:enabled="false"
         android:summary="@string/applist_description"
         android:title="@string/applist" />
@@ -12,57 +14,57 @@
     <PreferenceCategory
         android:key="SETTINGS"
         android:title="@string/settings">
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="HOSTS_HOOK"
             android:summary="@string/hosts_hook_description"
             android:title="@string/hosts_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="WEBVIEW_HOOK"
             android:summary="@string/webview_hook_description"
             android:title="@string/webview_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="ACTVIEW_HOOK"
             android:summary="@string/actview_hook_description"
             android:title="@string/actview_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="SERVICES_HOOK"
             android:summary="@string/services_hook_description"
             android:title="@string/services_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="RECEIVERS_HOOK"
             android:summary="@string/receivers_hook_description"
             android:title="@string/receivers_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="BACKPRESS_HOOK"
             android:summary="@string/backpress_hook_description"
             android:title="@string/backpress_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="SHORTCUT_HOOK"
             android:summary="@string/shortcut_hook_description"
             android:title="@string/shortcut_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="ANTIXPOSED_HOOK"
             android:summary="@string/antixposed_hook_description"
             android:title="@string/antixposed_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="SPLASH_HOOK"
             android:summary="@string/splash_hook_description"
             android:title="@string/splash_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="AGGRESSIVE_HOOK"
             android:summary="@string/aggressive_hook_description"
             android:title="@string/aggressive_hook" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="URL_HOOK"
             android:summary="@string/url_hook_description"
@@ -72,17 +74,17 @@
     <PreferenceCategory
         android:key="MISCELLANEOUS"
         android:title="@string/miscellaneous">
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="HIDEICON"
             android:summary="@string/hide_launcher_icon_description"
             android:title="@string/hide_launcher_icon" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="NORELOAD"
             android:summary="@string/no_reload_description"
             android:title="@string/no_reload" />
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="DEBUG"
             android:summary="@string/debug_description"
@@ -92,15 +94,15 @@
     <PreferenceCategory
         android:key="ABOUT"
         android:title="@string/about">
-        <PreferenceScreen
+        <Preference
             android:key="MAINTAINER"
             android:summary="@string/app_maintainer"
             android:title="@string/maintainer" />
-        <PreferenceScreen
+        <Preference
             android:key="GITHUB"
             android:summary="@string/open_project_description"
             android:title="@string/open_project" />
-        <PreferenceScreen
+        <Preference
             android:key="LICENSES"
             android:summary="@string/license_description"
             android:title="@string/license" />
@@ -109,8 +111,4 @@
     <PreferenceCategory
         android:key="CREDITS"
         android:title="@string/credits" />
-
-    <PreferenceCategory
-        android:key="NULL"
-        android:title=" " />
 </PreferenceScreen>

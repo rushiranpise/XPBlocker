@@ -1,6 +1,5 @@
 package com.aviraxp.xpblocker.ui;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -8,7 +7,9 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class LicensesDialog extends AlertDialog.Builder {
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
+public class LicensesDialog extends MaterialAlertDialogBuilder {
     private static final String LICENSES_URL = "file:///android_asset/html/licenses.html";
     private static final String UPDATE_LOG_URL = "file:///android_asset/html/update_en.html";
 
