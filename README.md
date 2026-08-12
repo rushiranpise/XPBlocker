@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="images/ic_launcher.png" alt="XPBlocker" width="128" />
+  <img src="images/ic_launcher.png" alt="XPBlocker Next" width="128" />
 </p>
 
-# XPBlocker
+# XPBlocker Next
 
-> **XPBlocker** is the revived, modernized version of the classic **AdBlocker** Xposed module.
-> It blocks ad hosts, activities, views, splash screens, services and receivers **without
-> touching the system hosts file and without a VPN** — you can use any VPN you want while it
-> blocks ads in the background.
+> **XPBlocker Next** is the successor of the classic **XPBlocker** Xposed module, modernized with
+> a Material 3 UI and a working CI pipeline. It blocks ad hosts, activities, views, splash
+> screens, services and receivers **without touching the system hosts file and without a VPN** —
+> you can use any VPN you want while it blocks ads in the background.
 
 - [Introduction](#introduction)
 - [Features](#features)
@@ -20,12 +20,14 @@
 ## Introduction
 
 AdBlocker was a popular Xposed module created by [@aviraxp](https://github.com/aviraxp) and
-abandoned since Nougat was coming. [@HardcodedCat](https://github.com/HardcodedCat) revived it,
-[@AwaisKing](https://github.com/AwaisKing) kept it alive, and this repository continues the work
-with a modern **Material 3 UI**, updated blocklists and a working CI pipeline.
+abandoned since Nougat was coming. [@HardcodedCat](https://github.com/HardcodedCat) revived it as
+**XPBlocker**, and [@AwaisKing](https://github.com/AwaisKing) kept it alive. **XPBlocker Next** is
+an independent successor: a separate project with a new package name
+(`com.aviraxp.xpblocker.next`), a modern **Material 3 UI**, updated blocklists and a working CI
+pipeline — it can be installed side-by-side with the original XPBlocker.
 
-XPBlocker is not VPN- or hosts-file-based: it hooks into the target apps themselves and blocks the
-ad-related hosts, activities, views, splash screens, services and receivers **inside the app
+XPBlocker Next is not VPN- or hosts-file-based: it hooks into the target apps themselves and blocks
+the ad-related hosts, activities, views, splash screens, services and receivers **inside the app
 process**. The blocklists ship inside the APK (including the
 [badmojr/1Hosts](https://github.com/badmojr/1Hosts) list), so there is nothing to download at
 runtime.
@@ -61,7 +63,7 @@ specific activities, views and hosts. Debug mode logs every blocked item to the 
 
 1. Download the latest APK from the [Releases](https://github.com/rushiranpise/XPBlocker/releases) page.
 2. Install it as a normal app.
-3. Enable **XPBlocker** in your Xposed framework's manager (LSPosed / Xposed Installer).
+3. Enable **XPBlocker Next** in your Xposed framework's manager (LSPosed / Xposed Installer).
 4. Reboot, then open the app and toggle the hooks you want.
 
 You can also hide the launcher icon from the app's settings (access the module again through your
@@ -89,10 +91,7 @@ Links to the original releases are gone, but you can always get fresh builds fro
 
 ## Credits and License
 
-- Created by [@aviraxp](https://github.com/aviraxp), revived by
-  [@HardcodedCat](https://github.com/HardcodedCat), continued by
-  [@AwaisKing](https://github.com/AwaisKing), now maintained by
-  [@rushiranpise](https://github.com/rushiranpise).
+- Successor of the original XPBlocker, maintained by [@rushiranpise](https://github.com/rushiranpise).
 - Blocklist: [badmojr/1Hosts](https://github.com/badmojr/1Hosts).
 
 This application is distributed under the **GPL-3.0 license** — see [LICENSE](LICENSE).

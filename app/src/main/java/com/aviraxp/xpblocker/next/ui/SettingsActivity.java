@@ -1,4 +1,4 @@
-package com.aviraxp.xpblocker.ui;
+package com.aviraxp.xpblocker.next.ui;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
@@ -15,8 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.preference.PreferenceManager;
 
-import com.aviraxp.xpblocker.BuildConfig;
-import com.aviraxp.xpblocker.R;
+import com.aviraxp.xpblocker.next.BuildConfig;
+import com.aviraxp.xpblocker.next.R;
 
 import java.io.File;
 

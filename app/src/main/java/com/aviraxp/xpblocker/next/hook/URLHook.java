@@ -1,10 +1,10 @@
-package com.aviraxp.xpblocker.hook;
+package com.aviraxp.xpblocker.next.hook;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.aviraxp.xpblocker.helper.PreferencesHelper;
-import com.aviraxp.xpblocker.util.LogUtils;
+import com.aviraxp.xpblocker.next.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.next.util.LogUtils;
 
 import java.net.MalformedURLException;
 import java.net.URL;

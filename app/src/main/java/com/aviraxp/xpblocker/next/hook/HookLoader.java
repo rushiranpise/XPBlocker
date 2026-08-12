@@ -1,7 +1,7 @@
-package com.aviraxp.xpblocker.hook;
+package com.aviraxp.xpblocker.next.hook;
 
-import com.aviraxp.xpblocker.helper.PreferencesHelper;
-import com.aviraxp.xpblocker.util.BlocklistInitUtils;
+import com.aviraxp.xpblocker.next.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.next.util.BlocklistInitUtils;
 
 import java.io.IOException;
 import java.util.HashMap;

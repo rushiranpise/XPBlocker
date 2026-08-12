@@ -1,8 +1,8 @@
-package com.aviraxp.xpblocker.helper;
+package com.aviraxp.xpblocker.next.helper;
 
 import androidx.annotation.NonNull;
 
-import com.aviraxp.xpblocker.BuildConfig;
+import com.aviraxp.xpblocker.next.BuildConfig;
 
 import java.util.Arrays;
 import java.util.List;

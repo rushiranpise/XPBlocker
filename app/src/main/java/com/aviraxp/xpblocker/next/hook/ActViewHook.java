@@ -1,9 +1,9 @@
-package com.aviraxp.xpblocker.hook;
+package com.aviraxp.xpblocker.next.hook;
 
-import static com.aviraxp.xpblocker.helper.PreferencesHelper.isActViewHookEnabled;
-import static com.aviraxp.xpblocker.helper.PreferencesHelper.isAggressiveHookEnabled;
-import static com.aviraxp.xpblocker.helper.PreferencesHelper.whiteListElements;
-import static com.aviraxp.xpblocker.hook.HookLoader.actViewList;
+import static com.aviraxp.xpblocker.next.helper.PreferencesHelper.isActViewHookEnabled;
+import static com.aviraxp.xpblocker.next.helper.PreferencesHelper.isAggressiveHookEnabled;
+import static com.aviraxp.xpblocker.next.helper.PreferencesHelper.whiteListElements;
+import static com.aviraxp.xpblocker.next.hook.HookLoader.actViewList;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import com.aviraxp.xpblocker.util.LogUtils;
+import com.aviraxp.xpblocker.next.util.LogUtils;
 
 import java.util.HashSet;
 

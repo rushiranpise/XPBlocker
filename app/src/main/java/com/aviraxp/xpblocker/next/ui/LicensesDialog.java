@@ -1,4 +1,4 @@
-package com.aviraxp.xpblocker.ui;
+package com.aviraxp.xpblocker.next.ui;
 
 import android.content.Context;
 import android.content.Intent;

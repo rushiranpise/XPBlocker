@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.aviraxp.xpblocker'
+    namespace 'com.aviraxp.xpblocker.next'
     compileSdk 35
 
     defaultConfig {
-        applicationId 'com.aviraxp.xpblocker'
+        applicationId 'com.aviraxp.xpblocker.next'
         minSdk 26
         targetSdk 35
 

@@ -1,8 +1,8 @@
-package com.aviraxp.xpblocker.hook;
+package com.aviraxp.xpblocker.next.hook;
 
 import androidx.annotation.NonNull;
 
-import com.aviraxp.xpblocker.BuildConfig;
+import com.aviraxp.xpblocker.next.BuildConfig;
 
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;

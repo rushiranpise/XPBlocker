@@ -1,4 +1,4 @@
-package com.aviraxp.xpblocker.ui;
+package com.aviraxp.xpblocker.next.ui;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import com.aviraxp.xpblocker.BuildConfig;
-import com.aviraxp.xpblocker.R;
+import com.aviraxp.xpblocker.next.BuildConfig;
+import com.aviraxp.xpblocker.next.R;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 

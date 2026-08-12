@@ -1,4 +1,4 @@
-package com.aviraxp.xpblocker.util;
+package com.aviraxp.xpblocker.next.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

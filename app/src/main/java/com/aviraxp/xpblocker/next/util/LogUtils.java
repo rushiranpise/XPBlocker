@@ -1,9 +1,9 @@
-package com.aviraxp.xpblocker.util;
+package com.aviraxp.xpblocker.next.util;
 
 import android.content.Context;
 import android.widget.Toast;
 
-import com.aviraxp.xpblocker.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.next.helper.PreferencesHelper;
 
 import de.robv.android.xposed.XposedBridge;
 

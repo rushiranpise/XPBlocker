@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">XPBlocker</string>
+    <string name="app_name">XPBlocker Next</string>
     <string name="xposed_description">Blocks ad hosts, activities, views, splashscreens, services and recievers, without touching system hosts file nor using a VPN for blocking.</string>
     <string name="hint_reboot_not_active">The module is not activated!</string>
     <string name="actview_hook">Activity and View Blocking</string>
@@ -33,7 +33,7 @@
     <string name="activity_whitelist_description">Input activities that should not be affected by this module</string>
     <string name="activity_whitelist">Activity Whitelist</string>
     <string name="miscellaneous">Miscellaneous</string>
-    <string name="credits">Created by aviraxp, revived by AwaisKing</string>
+    <string name="credits">Successor of XPBlocker · maintained by rushiranpise</string>
     <string name="shortcut_hook_description">Prevent selected apps from auto creating shortcuts</string>
     <string name="shortcut_hook">Prevent Shortcut Auto Creation</string>
     <string name="no_reload_description">Improves performance, but every new configuration will not take effect until next boot</string>

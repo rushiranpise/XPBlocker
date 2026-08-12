@@ -1,4 +1,4 @@
-package com.aviraxp.xpblocker.hook;
+package com.aviraxp.xpblocker.next.hook;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Pair;
 
-import com.aviraxp.xpblocker.helper.PreferencesHelper;
-import com.aviraxp.xpblocker.util.LogUtils;
+import com.aviraxp.xpblocker.next.helper.PreferencesHelper;
+import com.aviraxp.xpblocker.next.util.LogUtils;
 
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
